@@ -21,19 +21,15 @@ body{
   height: 100vh;
   display: grid;
   place-items: center;
-  padding: 20px;
 }
 .container > .envelope-wrapper {
   background: var(--bg-envelope-color);
   box-shadow: 0 0 40px var(--shadow-color);
-  padding: 10px;
 }
 .envelope-wrapper > .envelope {
   position: relative;
   width: 300px;
   height: 230px;
-  max-width: 100%;
-  max-height: 100%;
 }
 .envelope-wrapper > .envelope::before {
   content: "";
@@ -145,39 +141,4 @@ body{
 
 .flap > .heart:hover {
   transform: rotate(0deg);
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-  .envelope-wrapper > .envelope {
-      width: 90%;
-      height: auto;
-  }
-  .envelope-wrapper > .envelope::before, .envelope-wrapper > .envelope::after {
-      border-top-width: 65px;
-      border-right-width: 75px;
-      border-left-width: 75px;
-      border-bottom-width: 50px;
-  }
-  .envelope > .letter {
-      width: 90%;
-      right: 5%;
-  }
-  .heart {
-      width: 10px;
-      height: 10px;
-  }
-  .heart:before, .heart:after {
-      width: 10px;
-      height: 10px;
-  }
-  .envelope > .letter > .text {
-      font-size: 8px;
-  }
-  .envelope-wrapper > .click-me {
-      font-size: 14px;
-  }
-  .container > .envelope-wrapper > .developed-by {
-      font-size: 10px;
-  }
 }
